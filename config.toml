@@ -1,4 +1,4 @@
-baseurl = "https://planette.io/"
+baseurl = "https://planette.surge.sh/"
 languageCode = "en-us"
 title = "Planette - Tutorials, examples, snippets and other dev tools"
 
