@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<section id="main">
+    <article class="post post-detail">
+        <div class="hero">
+            <h1 class="title">
+                {{ .Title }}
+                <small>{{ .Date.Format "02/01/2006" }}</small>
+            </h1>
+
+            <div class="perex">
+                {{ .Summary }}
+            </div>
+        </div>
+        <div class="fork">
+            <a class="button" href="{{ .Site.Params.github_content }}{{ .File.Path }}">
+                <i class="fa fa-code-fork" aria-hidden="true"></i>
+                Did you find a glitch or typo? Please fork me and correct me. Thanks.
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="body">
+            <div class="content">
+                {{ $body := replace .Content .Summary "" }}
+                {{ $body | safeHTML }}
+            </div>
+
+            <div class="disqus">
+                <div id="disqus_thread" data-disqus-url="{{ .Permalink }}"></div>
+            </div>
+        </div>
+    </article>
+</section>
+
+{{ partial "comments.html" }}
+
+{{ end }}

@@ -1,0 +1,29 @@
+/* Container */
+div.container {
+  padding: 0;
+}
+
+#container {
+  padding: 0;
+  margin: 0 auto;
+
+  div.container-inner {
+  }
+}
+
+/* Response min-1200 */
+@media (min-width: 1200px) {
+  div.container {
+    width: 970px;
+  }
+}
+
+/* Response max-768 */
+@media (max-width: 768px) {
+  #container {
+    margin-top: 0;
+    .container-inner {
+      padding: 0 10px;
+    }
+  }
+}

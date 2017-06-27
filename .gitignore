@@ -1,0 +1,8 @@
+# NPM
+/node_modules
+
+# Compiled assets
+/static/dist
+
+# Hugo
+/public

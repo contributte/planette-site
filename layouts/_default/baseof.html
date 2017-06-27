@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 9]>
+<html class="ie9" lang="en"><![endif]--><!--[if IE 8]>
+<html class="ie8" lang="en"><![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.png" type="image/x-icon">
+
+    <title>Planette - Tutorials, examples, snippets and other dev tools</title>
+
+    <!-- SEO -->
+    <meta name="keywords" content="@todo">
+    <meta name="description" content="@todo">
+    <meta name="googlebot" content="snippet,archive">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Planette <planette@planette.io>">
+
+    <!-- FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Site.BaseURL }}">
+    <meta property="og:description" content="@todo">
+
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/agate.min.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}dist/bundle.css?v={{ readFile "/static/dist/bundle.css" | md5 }}">
+
+    <!-- Monitoring -->
+    <!--{{ partial "smartlook" }}-->
+</head>
+<body>
+<div id="navbar">
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#planette-navbar-collapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">Planette</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-right" id="planette-navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<div id="header">
+	<div class="container">
+		<h2>What are you looking for?</h2>
+		<input type="text">
+	</div>
+</div>
+
+<div id="main">
+	<div class="container">
+		{{ block "main" .}}{{ end }}
+	</div>
+</div>
+
+<div id="footer">
+	<div class="widgets">
+		<div class="container">
+			<div class="row">
+				<div class="widget col-md-3">
+					<h2>Recent posts</h2>
+					<ul class="links">
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+					</ul>
+				</div>
+				<div class="widget col-md-3">
+					<h2>Nette</h2>
+					<ul class="links">
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+					</ul>
+				</div>
+				<div class="widget col-md-3">
+					<h2>Componette</h2>
+					<ul class="links">
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+					</ul>
+				</div>
+				<div class="widget col-md-3">
+					<h2>Contact us</h2>
+					<ul class="links">
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+						<li><a href="">Test</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					Subscribe for latest news.
+				</div>
+				<div class="col-md-4">
+					Input
+				</div>
+				<div class="col-md-4">
+					Facebook / Twitter / Youtube
+				</div>
+			</div>
+			<hr>
+			<div class="text-center">&copy; 2016-2017 Planette, Inc. All rights reserved. Made by <a href="https://github.com/planette">Planette</a>.</div>
+		</div>
+	</div>
+</div>
+<!--{{ partial "qa.html" }}-->
+
+<!-- JS -->
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="{{ .Site.BaseURL }}dist/bundle.js?v={{ readFile "/static/dist/bundle.js" | md5}}" type="text/javascript"></script>
+</body>
+</html>

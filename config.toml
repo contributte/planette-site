@@ -1,0 +1,12 @@
+baseurl = "https://planette.io/"
+languageCode = "en-us"
+title = "Planette - Tutorials, examples, snippets and other dev tools"
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
+
+[params]
+    github = "https://github.com/planette/cookbook/"
+    github_content = "https://github.com/planette/cookbook/blob/master/content/"
