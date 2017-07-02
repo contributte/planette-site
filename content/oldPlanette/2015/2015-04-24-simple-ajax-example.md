@@ -5,6 +5,7 @@ title: "Simple ajax example"
 tags: ["ajax"]
 type: "blog"
 slug: "simple-ajax-example"
+author: "Tomáš Votruba"
 ---
 
 This tutorial is created using **Nette 2.0.10** Sandbox.

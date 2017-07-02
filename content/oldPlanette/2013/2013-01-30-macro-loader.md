@@ -1,10 +1,12 @@
-### 
-date: "2015-07-30"
+---
+date: "2013-01-30"
 draft: false
 title: "Macro loader"
 tags: ["latte", "template"]
 type: "blog"
-### slug: "macro-loader"
+slug: "macro-loader"
+author: "Martin Zlámal"
+---
 
 This short tutorial will show you, how to create and register custom macros.
 

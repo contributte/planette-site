@@ -5,6 +5,7 @@ title: "Add data atributes to options elements in select element"
 tags: ["form", "data-attribute", "select"]
 type: "blog"
 slug: "add-data-atributes-to-options-elements-in-select-element"
+author: "Honza Černý"
 ---
 
 Sometimes you need more data in options in select elements like :

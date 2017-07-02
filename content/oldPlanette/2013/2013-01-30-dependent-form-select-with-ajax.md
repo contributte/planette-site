@@ -5,6 +5,7 @@ title: "Dependent form select with AJAX"
 tags: ["posobota"]
 type: "blog"
 slug: "dependent-form-select-with-ajax"
+author: "Martin Zlámal"
 ---
 
 This is case you want to create form select, which values depend on another select value. Simple use case: select country, than select city from the country, than select street from the city.

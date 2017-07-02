@@ -5,6 +5,7 @@ title: "Remove section from Form"
 tags: ["form"]
 type: "blog"
 slug: "remove-section-from-form"
+author: "Honza Černý"
 ---
 
 In form factory call:

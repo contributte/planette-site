@@ -5,6 +5,7 @@ title: "Blank page after upload on web server"
 tags: ["faq", "hosting"]
 type: "blog"
 slug: "blank-page-after-upload-on-web-server"
+author: "Armin Schmidtke"
 ---
 
 Try these troubleshooting steps:

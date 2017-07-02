@@ -5,6 +5,7 @@ title: "Redirect to same page after form submit"
 tags: ["form"]
 type: "blog"
 slug: "redirect-to-same-page-after-form-submit"
+author: "Tomáš Votruba"
 ---
 
 We're on a protected page and we need to force the user to sign in. We have this place all over the application we want the user to get back to where he started after signing in.

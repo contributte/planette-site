@@ -1,10 +1,11 @@
 ---
-date: "2015-08-30"
+date: "2012-01-30"
 draft: false
 title: "How to pass values to helper / Helper Loader"
 tags: ["latte", "template"]
 type: "blog"
 slug: "how-to-pass-values-to-helper-helper-loader"
+author: "Martin Zlámal"
 ---
 
 If you need to pass a helper already defined values or database results, you can do it through anynomous function.

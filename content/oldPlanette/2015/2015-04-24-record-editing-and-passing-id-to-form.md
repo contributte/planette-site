@@ -5,6 +5,7 @@ title: "Record editing and passing id to form"
 tags: ["form"]
 type: "blog"
 slug: "record-editing-and-passing-id-to-form"
+author: "Tomáš Votruba"
 ---
 
 If you want to edit a record, you have to pass its id to save function. You can use `$form->addHidden()` though, but often it's better to use an action parameter.

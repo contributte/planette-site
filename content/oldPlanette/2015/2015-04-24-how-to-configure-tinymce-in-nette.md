@@ -5,6 +5,7 @@ title: "How to configure TinyMCE in nette"
 tags: ["tinymce"]
 type: "blog"
 slug: "how-to-configure-tinymce-in-nette"
+author: "Jak Trvdík"
 ---
 
 

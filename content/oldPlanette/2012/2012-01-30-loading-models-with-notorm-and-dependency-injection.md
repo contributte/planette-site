@@ -5,6 +5,7 @@ title: "Loading models with NotORM and Dependency Injection"
 tags: ["posobota"]
 type: "blog"
 slug: "loading-models-with-notorm-and-dependency-injection"
+author: "Martin Zlámal"
 ---
 
 Since [Nette 2.0.5](https://forum.nette.org/en/1074-nette-framework-2-0-5-released) we can load models via **Dependency Injection container** (in [config files ]( doc:en:configuring#toc-services-definitions)) and in presenter we can use [autowire ](doc:en:configuring#toc-auto-wiring) method **inject**. Pros of DI container approach is transparency.

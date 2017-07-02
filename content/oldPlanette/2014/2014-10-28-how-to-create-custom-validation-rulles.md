@@ -5,6 +5,7 @@ title: "How to create custom validation rulles"
 tags: ["forms", "validation"]
 type: "blog"
 slug: "how-to-create-custom-validation-rulles"
+author: "Honza Černý"
 ---
 
 Constants (DOMAIN, USER_IN_DOMAIN) contain name of static function, that call for validation.

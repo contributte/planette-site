@@ -5,6 +5,7 @@ title: "Single page microframework"
 tags: ["microframework", "single page"]
 type: "blog"
 slug: "single-page-microframework"
+author: "Honza Černý"
 ---
 
 ```php

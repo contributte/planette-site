@@ -5,6 +5,7 @@ title: "More Dibi connections in Neon"
 tags: ["config", "database", "dibi"]
 type: "blog"
 slug: "more-dibi-connections-in-neon"
+author: "Miroslav Hůla"
 ---
 
 ```yaml

@@ -5,6 +5,7 @@ title: "Opening files in IDE by one click from Tracy bluescreen"
 tags: ["tracy", "editor", "ide", "browser", "bluescreen"]
 type: "blog"
 slug: "opening-files-in-id-e-by-one-click-from-tracy-bluescreen"
+author: "pekelnik"
 ---
 
 When error page is displayed, you can click on a file name to open relevant file in your editor, of course having having cursor in appropriate line of code. To make all this work, you need to configure your system little bit.

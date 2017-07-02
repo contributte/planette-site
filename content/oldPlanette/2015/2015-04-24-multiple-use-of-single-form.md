@@ -1,15 +1,14 @@
 ---
-date: "2012-04-10"
+date: "2014-04-24"
 draft: false
 title: "Multiple use of single form"
-tags: ["forms"]
+tags: ["forms", "factory"]
 type: "blog"
 slug: "multiple-use-of-single-form"
+author: "Patrik Votoček"
 ---
 
-Do you have form in separated class? Do you want to use it in several places?
-
-<!--more-->
+Do you have form in separated class which you want to use on several places?
 
 ## Class form
 
@@ -32,7 +31,7 @@ class LoginForm extends \Nette\Application\UI\Form
 
 		$this->addSubmit('sub', "Login");
 
-		$this->onSuccess[] = [$this, 'process'];
+		$this->onSuccess[] = callback($this, 'process');
 	}
 
 	public function process()
@@ -50,8 +49,8 @@ class LoginForm extends \Nette\Application\UI\Form
 
 Register callback processing the form during initialization.
 
-## Use in presenter
-
+Use in presenter
+---
 ```php
 class LoginPresenter extends \Nette\Application\UI\Presenter
 {

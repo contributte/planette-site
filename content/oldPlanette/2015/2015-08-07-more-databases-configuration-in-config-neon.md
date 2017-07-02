@@ -5,6 +5,7 @@ title: "More databases configuration in config.neon"
 tags: ["config", "database"]
 type: "blog"
 slug: "more-databases-configuration-in-config-neon"
+author: "Jiří Zralý"
 ---
 
 If you need to connect to different database in different repositories. Follows Nette Sandbox configuration.

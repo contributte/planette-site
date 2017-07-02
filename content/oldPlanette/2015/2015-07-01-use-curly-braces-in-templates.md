@@ -5,6 +5,7 @@ title: "Use curly `{}` braces in templates"
 tags: ["latte", "escape", "template"]
 type: "blog"
 slug: "use-curly-braces-in-templates"
+author: "Armin Schmidtke"
 ---
 
 Curly braces `{}` are the default delimiters in Latte. If you don't want the curly braces interpreted as Latte tags (for example, in JavaScript), you need to type a space after `{`:

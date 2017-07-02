@@ -5,6 +5,7 @@ title: "Nette with grunt"
 tags: ["grunt", "javascript", "css", "minification"]
 type: "blog"
 slug: "nette-with-grunt"
+author: "Honza Černý"
 ---
 
 ## Why this friendship?

@@ -5,6 +5,7 @@ title: "Setting up defaults to edit form"
 tags: ["config", "database", "dibi"]
 type: "blog"
 slug: "setting-up-defaults-to-edit-form"
+author: "Martin Zlámal"
 ---
 
 Setting up defaults in factory component / form is wrong. What's the right way to do so?

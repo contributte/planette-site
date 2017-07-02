@@ -5,6 +5,7 @@ title: "Component separate rendering of js and html content"
 tags: ["latte", "component"]
 type: "blog"
 slug: "component-separate-rendering-of-js-and-html-content"
+author: "Tomáš Grasl"
 ---
 
 @layout.latte
