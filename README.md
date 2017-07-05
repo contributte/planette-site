@@ -4,14 +4,14 @@ This is source of my community project **planette**. Welcome!
 
 -----
 
-[![Build Status](https://img.shields.io/travis/planette/cookbook.svg?style=flat-square)](https://travis-ci.org/planette/cookbook)
+[![Build Status](https://img.shields.io/travis/planette/planette.svg?style=flat-square)](https://travis-ci.org/planette/planette)
 
 -----
 
 
 ## Development
 
-- clone this repo (`git@github.com:planette/cookbook.git`)
+- clone this repo (`git@github.com:planette/planette.git`)
 - install hugo (https://gohugo.io/)
 - install node modules `npm install`
 - compile assets `npm run build`
