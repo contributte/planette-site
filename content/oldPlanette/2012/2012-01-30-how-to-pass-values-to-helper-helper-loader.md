@@ -8,7 +8,7 @@ slug: "how-to-pass-values-to-helper-helper-loader"
 author: "Martin Zlámal"
 ---
 
-If you need to pass a helper already defined values or database results, you can do it through anynomous function.
+If you need to pass a helper already defined values or database results, you can do it through anonymous function.
 
 ### Static list
 
@@ -42,10 +42,10 @@ $this->template->registerHelper('category', function($categoryId) use($categoryL
 
 ## Helper Loader
 
-Another and easily extendable solution is to use your own [helper loader](https://doc.nette.org/en/templating#toc-helper-loader).  You can extend the class and simply test them and move to other projects.
+Another and easily extensible solution is to use your own [helper loader](https://doc.nette.org/en/templating#toc-helper-loader).  You can extend the class and simply test them and move to other projects.
 
 
-Following example respects **Dependency Injection**, so it's passing only required services, you can use to **access database**, **predefined parameters**, **path to dirs `temp`, `app`** etc. Our loader contains helper profilePicture, which based on file name return route to profile photo, resp. to deafult "no profile photo" file.
+Following example respects **Dependency Injection**, so it's passing only required services, you can use to **access database**, **predefined parameters**, **path to dirs `temp`, `app`** etc. Our loader contains helper profilePicture, which based on file name return route to profile photo, resp. to default "no profile photo" file.
 
 ```php
 namespace App;
@@ -99,9 +99,10 @@ class Helpers extends Nette\Object
 }
 ```
 
-.[tip]
+{{% tip %}}
 If you need use presenter functions in helper (**redirect()**, **link()** etc.), zou have to pass service `@application` through the `__construct`.
 Presenter will be accessible through `$application->getPresenter()` during template rendering.
+{{% /tip %}}
 
 
 ### How to register helper loader?
