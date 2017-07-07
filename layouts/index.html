@@ -6,12 +6,9 @@
 			<div class="box-inner">
 				<h2>Latests news</h2>
 				<ul class="list">
-					<li><a href="">Foo</a></li>
-					<li><a href="">Foo</a></li>
-					<li><a href="">Foo</a></li>
-					<li><a href="">Foo</a></li>
-					<li><a href="">Foo</a></li>
-					<li><a href="">Foo</a></li>
+					{{ range .Data.Pages.ByDate.Reverse }}
+					<li><a href="{{ .RelPermalink }}">{{ .Date.Format "02/01/2006" }} | {{ .Title }}</a></li>
+					{{ end }}
 				</ul>
 			</div>
 		</div>
@@ -19,12 +16,9 @@
 			<div class="box-inner">
 				<h2>Latests news</h2>
 				<ul class="list">
-					<li><a href="">Foo</a></li>
-					<li><a href="">Foo</a></li>
-					<li><a href="">Foo</a></li>
-					<li><a href="">Foo</a></li>
-					<li><a href="">Foo</a></li>
-					<li><a href="">Foo</a></li>
+					{{ range .Data.Pages.ByDate.Reverse }}
+					<li><a href="{{ .RelPermalink }}">{{ .Date.Format "02/01/2006" }} | {{ .Title }}</a></li>
+					{{ end }}
 				</ul>
 			</div>
 		</div>
@@ -32,12 +26,9 @@
 			<div class="box-inner">
 				<h2>Latests news</h2>
 				<ul class="list">
-					<li><a href="">Foo</a></li>
-					<li><a href="">Foo</a></li>
-					<li><a href="">Foo</a></li>
-					<li><a href="">Foo</a></li>
-					<li><a href="">Foo</a></li>
-					<li><a href="">Foo</a></li>
+					{{ range .Data.Pages.ByDate.Reverse }}
+					<li><a href="{{ .RelPermalink }}">{{ .Date.Format "02/01/2006" }} | {{ .Title }}</a></li>
+					{{ end }}
 				</ul>
 			</div>
 		</div>
