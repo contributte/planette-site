@@ -1,5 +1,5 @@
 ---
-date: "2014-07-03"
+date: "2015-07-03"
 draft: false
 title: "Blank page after upload on web server"
 tags: ["faq", "hosting"]

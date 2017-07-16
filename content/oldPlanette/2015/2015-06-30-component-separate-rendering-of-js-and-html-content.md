@@ -1,5 +1,5 @@
 ---
-date: "2014-06-30"
+date: "2015-06-30"
 draft: false
 title: "Component separate rendering of js and html content"
 tags: ["latte", "component"]

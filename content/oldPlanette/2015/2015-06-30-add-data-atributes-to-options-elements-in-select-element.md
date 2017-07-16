@@ -1,5 +1,5 @@
 ---
-date: "2014-06-30"
+date: "2015-06-30"
 draft: false
 title: "Add data atributes to options elements in select element"
 tags: ["form", "data-attribute", "select"]

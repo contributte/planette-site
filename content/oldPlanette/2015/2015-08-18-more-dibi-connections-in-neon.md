@@ -1,5 +1,5 @@
 ---
-date: "2014-08-18"
+date: "2015-08-18"
 draft: false
 title: "More Dibi connections in Neon"
 tags: ["config", "database", "dibi"]

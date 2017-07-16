@@ -1,5 +1,5 @@
 ---
-date: "2014-07-01"
+date: "2015-07-01"
 draft: false
 title: "Use curly `{}` braces in templates"
 tags: ["latte", "escape", "template"]

@@ -1,5 +1,5 @@
 ---
-date: "2014-06-29"
+date: "2015-06-29"
 draft: false
 title: "Disable tracy for json api on localhost"
 tags: ["tracy", "json", "api", "localhost"]

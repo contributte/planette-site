@@ -1,5 +1,5 @@
 ---
-date: "2014-04-24"
+date: "2015-04-24"
 draft: false
 title: "Opening files in IDE by one click from Tracy bluescreen"
 tags: ["tracy", "editor", "ide", "browser", "bluescreen"]

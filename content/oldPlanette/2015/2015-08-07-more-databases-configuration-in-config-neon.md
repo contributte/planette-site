@@ -1,5 +1,5 @@
 ---
-date: "2014-08-07"
+date: "2015-08-07"
 draft: false
 title: "More databases configuration in config.neon"
 tags: ["config", "database"]

@@ -1,5 +1,5 @@
 ---
-date: "2014-07-23"
+date: "2015-07-23"
 draft: false
 title: "How to use Angular in Latte templates"
 tags: ["latte", "javascript", "template", "angular"]

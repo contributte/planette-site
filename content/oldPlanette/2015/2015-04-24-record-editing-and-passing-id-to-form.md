@@ -1,5 +1,5 @@
 ---
-date: "2014-04-24"
+date: "2015-04-24"
 draft: false
 title: "Record editing and passing id to form"
 tags: ["form"]
