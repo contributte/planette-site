@@ -1,5 +1,5 @@
 ---
-date: ""
+date: "2015-04-24"
 draft: false
 title: "Different layout in administration"
 tags: ["article", "administration", "admin"]

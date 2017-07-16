@@ -1,5 +1,5 @@
 ---
-date: ""
+date: "2014-10-28"
 draft: false
 title: "Connect Dibi as a service with tracy bar"
 tags: ["snippet", "neon", "dependency injection", "dibi", "tracy"]

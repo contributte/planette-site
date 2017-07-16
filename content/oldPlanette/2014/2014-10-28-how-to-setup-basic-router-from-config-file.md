@@ -1,10 +1,10 @@
 ---
-date: ""
+date: "2014-10-28"
 draft: false
-title: "Simple way hot to setup basic router from config file"
+title: "How to setup basic router from config file"
 tags: ["snippet", "routes", "configuration"]
 type: "blog"
-slug: "simple-way-hot-to-setup-basic-router-from-config-file"
+slug: "how-to-setup-basic-router-from-config-file"
 author: "Honza Černý"
 ---
 

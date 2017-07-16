@@ -1,5 +1,5 @@
 ---
-date: ""
+date: "2015-02-01"
 draft: false
 title: "How to use Texy in Latte template as a filter"
 tags: ["snippet", "texy", "dependency injection", "latte"]

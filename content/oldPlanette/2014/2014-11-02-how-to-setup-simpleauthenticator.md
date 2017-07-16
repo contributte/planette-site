@@ -1,5 +1,5 @@
 ---
-date: ""
+date: "2014-11-02"
 draft: false
 title: "How to setup SimpleAuthenticator"
 tags: ["snippet", "neon", "dependency injection"]

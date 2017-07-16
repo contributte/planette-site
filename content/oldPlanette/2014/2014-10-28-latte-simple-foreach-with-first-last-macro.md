@@ -1,5 +1,5 @@
 ---
-date: ""
+date: "2014-10-28"
 draft: false
 title: "Latte simple foreach with {first} {last} macro"
 tags: ["snippet", "latte"]

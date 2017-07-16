@@ -1,5 +1,5 @@
 ---
-date: ""
+date: "2014-10-28"
 draft: false
 title: "Use persistent parameters in Presenters"
 tags: ["snippet", "presenter", "persistent"]

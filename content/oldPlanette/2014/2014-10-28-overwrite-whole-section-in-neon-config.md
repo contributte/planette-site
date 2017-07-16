@@ -1,5 +1,5 @@
 ---
-date: ""
+date: "2014-10-28"
 draft: false
 title: "Overwrite whole section in neon config"
 tags: ["snippet", "neon"]

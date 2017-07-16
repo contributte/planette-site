@@ -1,5 +1,5 @@
 ---
-date: ""
+date: "2014-10-28"
 draft: false
 title: "How to test exception call"
 tags: ["snippet", "tester", "exception"]

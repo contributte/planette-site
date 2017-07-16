@@ -1,10 +1,10 @@
 ---
-date: ""
+date: "2014-10-28"
 draft: false
-title: "Howto Lazy Factory"
+title: "How to create lazy factory"
 tags: ["snippet", "dependency injection"]
 type: "blog"
-slug: "howto-lazy-factory"
+slug: "how-to-create-lazy-factory"
 author: "Honza Černý"
 ---
 

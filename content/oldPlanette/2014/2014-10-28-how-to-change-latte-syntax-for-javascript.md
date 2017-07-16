@@ -1,5 +1,5 @@
 ---
-date: ""
+date: "2014-10-28"
 draft: false
 title: "How to change latte syntax for JavaScript"
 tags: ["snippet", "latte", "javascript"]

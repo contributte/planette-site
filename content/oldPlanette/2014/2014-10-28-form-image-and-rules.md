@@ -1,5 +1,5 @@
 ---
-date: ""
+date: "2014-10-28"
 draft: false
 title: "Form image and rules"
 tags: ["snippet", "image", "form", "validation"]

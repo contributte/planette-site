@@ -1,5 +1,5 @@
 ---
-date: ""
+date: "2014-11-19"
 draft: false
 title: "How to AJAX response (with JSON)"
 tags: ["snippet", "json", "response"]

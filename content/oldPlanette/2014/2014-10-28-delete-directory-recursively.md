@@ -1,10 +1,10 @@
 ---
-date: ""
+date: "2014-10-28"
 draft: false
-title: "Recursive delete folder"
+title: "Delete directory recursively"
 tags: ["snippet", "finder"]
 type: "blog"
-slug: "recursive-delete-folder"
+slug: "delete-directory-recursively"
 author: "Honza Černý"
 ---
 
