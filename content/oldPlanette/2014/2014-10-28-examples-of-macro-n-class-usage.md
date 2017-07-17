@@ -2,7 +2,7 @@
 date: "2014-10-28"
 draft: false
 title: "Examples of macro \"n:class\" usage"
-tags: ["snippet", "latte", "n:macro"]
+tags: ["snippet", "latte", "macro"]
 type: "blog"
 slug: "examples-of-macro-n-class-usage"
 author: "Honza Černý"
