@@ -8,9 +8,9 @@ slug: "acl-and-permissions"
 author: "Pavel Janda"
 ---
 
-Let's start with creating a empty project: `composer create-project nette/web-project myweb`.
+Let's start with creating an empty project: `composer create-project nette/web-project myweb`.
 
-From the start, we can ask user if he is logged in or whether he has some role assigned:
+Out of the box, you can ask Nette Framework if the user has some roles and whether he is logged in or not:
 
 ```php
 <?php
@@ -90,9 +90,9 @@ class AuthorizatorFactory
 What have we done in this step:
 
 1. Two user roles were created:
-    - `guest`: that is a default role name (of unsigned user) in nette framework
+    - `guest`: that is a default role name (of unsigned user) in Nette Framework
     - `client`: role defined by us == logged user
-2. Role `client` inherits from `guest` role (`$acl->addRole(self::ROLE_CLIENT, self::ROLE_GUEST);`)
+2. Role `client` inherits from the `guest` role (`$acl->addRole(self::ROLE_CLIENT, self::ROLE_GUEST);`)
 3. There are two main resources (`Front`, `Client`) and other that inherit from these two:
     - `Front:Homepage`
     - `Front:About`
@@ -100,7 +100,7 @@ What have we done in this step:
     - `Client:Profile`
 4. `guest` role is able to look at everything in `Front` resource (`$acl->allow(self::ROLE_GUEST, 'Front');`) but also the `Client:Sign` (`$acl->allow(self::ROLE_GUEST, 'Client:Sign');`) resource. The `Client:Sign is there because unsigned user has to be allowed to log in`. Role `client` is allowed to do everything in the world (`$acl->allow(self::ROLE_CLIENT,  Permission::ALL, Permission::ALL);`).
 
-Cool, we have a Permission object, what now? Let's tell nette framework that it can use a `authorizator`:
+Cool, we have a Permission object, what now? Let's tell Nette that it can use a `authorizator`:
 
 ```yml
 services:
@@ -111,7 +111,7 @@ services:
         factory: @App\Security\AuthorizatorFactory::create
 ```
 
-By default, nette looks into `DIC` and tries to find a service implementing `Nette\Security\IAuthorizator`. The `Nette\Security\Permission` class implements that interface and we have registered this class into `DIC` so it will be automatically passed to an object of type `Nette\Security\User` available in each `Presenter` class.
+By default, Nette looks into `DIC` and tries to find a service implementing `Nette\Security\IAuthorizator`. The `Nette\Security\Permission` class implements that interface and we have registered this class into `DIC` so it will be automatically passed to an object of type `Nette\Security\User` available in each `Presenter` class.
 
 Try it out in action:
 
@@ -137,7 +137,7 @@ class HomepagePresenter extends Presenter
 }
 ```
 
-Right. Now we have to automate the process a bit (as I saind before - we don't want to call `$this->user->isAllowed('...')` each time manually).
+Right. Now we have to automate the process a bit (as I said before - we don't want to call `$this->user->isAllowed('...')` each time manually).
 I will create a `AbstractPresenter` class for that purpose (it will be empty for now):
 
 ```php
@@ -211,7 +211,7 @@ class ProfilePresenter extends AbstractPresenter
 }
 ```
 
-You see the annotation? That is our own way how to define a resource on presenter class. Beware! You can do it your own way, the annotation is just one among many other ways how to define presenter resource (You can use for example the nette naming convention: `$presenter->getName()`).
+Do you see the annotation? That is our own way how to define a resource on presenter class. Beware! You can do it your own way, the annotation is just one among many other ways how to define presenter resource (You can use for example the Nette naming convention: `$presenter->getName()`).
 
 We may make the SignPresenter a little bit more functional..
 
@@ -220,8 +220,8 @@ We may make the SignPresenter a little bit more functional..
 
 namespace App\Presenters;
 
-use Nette\Application\UI\Form;
 use App\Security\AuthorizatorFactory;
+use Nette\Application\UI\Form;
 use Nette\Security\Identity;
 use Nette\Utils\ArrayHash;
 
@@ -364,7 +364,7 @@ And that's it!
 
 ----
 
-That was just an simple way how to implement `ACL` in the nette application, sure it can be done in more complex ways with more functioanality. For example:
+That was just an simple way how to implement `ACL` in the Nette application, sure it can be done in more complex ways with more functioanality. For example:
 
 - We can specify `privileges` in particular resources (`$this->allow(self::ROLE_GUEST, 'Front', ['read', 'write]);`) and use these privileges in action methods annotation. We would check user's permissions in the first if-clause of `AbstractPresenter::checkRequirements()` method
 - Getting presenter/method annotation could be more extensive - we mau implement some annotation inheritency for more modular applications
