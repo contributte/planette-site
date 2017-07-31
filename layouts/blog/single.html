@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <section id="main">
-    <article class="post post-detail">
+    <article class="post-single">
         <div class="hero">
             <h1 class="title">
                 {{ .Title }}
@@ -12,13 +12,13 @@
                 {{ .Summary }}
             </div>
         </div>
-        <div class="fork">
+        <!-- <div class="fork">
             <a class="button" href="{{ .Site.Params.github_content }}{{ .File.Path }}">
                 <i class="fa fa-code-fork" aria-hidden="true"></i>
                 Did you find a glitch or typo? Please fork me and correct me. Thanks.
                 <i class="fa fa-github" aria-hidden="true"></i>
             </a>
-        </div>
+        </div> -->
         <div class="body">
             <div class="content">
                 {{ $body := replace .Content .Summary "" }}

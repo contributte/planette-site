@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico" type="image/x-icon">
 
     <title>Planette - Tutorials, examples, snippets and other dev tools</title>
 
@@ -26,7 +26,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/agate.min.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}dist/bundle.css?v={{ readFile "/static/dist/bundle.css" | md5 }}">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}dist/bundle.css">
 
     <!-- Monitoring -->
     <!--{{ partial "smartlook" }}-->
@@ -47,9 +47,9 @@
 
 			<div class="collapse navbar-collapse navbar-right" id="planette-navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
+					<li {{ if eq .Page.URL "/" }}class="active"{{ end }}><a href="/">Latests posts</a></li>
+					<li {{ if eq .Page.URL "/contributing/" }}class="active"{{ end }}><a href="/contributing">Contributing</a></li>
+					<li {{ if eq .Page.URL "/team/" }}class="active"{{ end }}><a href="/team">Team</a></li>
 				</ul>
 			</div>
 		</div>
@@ -58,8 +58,6 @@
 
 <div id="header">
 	<div class="container">
-		<h2>What are you looking for?</h2>
-		<input type="text">
 	</div>
 </div>
 
@@ -73,48 +71,44 @@
 	<div class="widgets">
 		<div class="container">
 			<div class="row">
-				<div class="widget col-md-3">
+				<div class="widget col-md-6">
 					<h2>Recent posts</h2>
 					<ul class="links">
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
+						{{ range first 6 (where .Site.Pages.ByDate "Type" "blog").Reverse }}
+						<li><a href="{{ .RelPermalink }}">{{ .Date.Format "02/01/2006" }} | {{ .Title }}</a></li>
+						{{ end }}
 					</ul>
 				</div>
-				<div class="widget col-md-3">
+				<div class="widget col-md-2">
 					<h2>Nette</h2>
 					<ul class="links">
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
+						<li><a href="https://doc.nette.org">Documentation</a></li>
+						<li><a href="https://doc.nette.org/en/2.4/quickstart">QuickStart</a></li>
+						<li><a href="https://forum.nette.org">Forum</a></li>
+						<li><a href="https://gitter.im/nette/nette">Chat</a></li>
+						<li><a href="https://www.youtube.com/user/NetteFramework">Videos</a></li>
+						<li><a href="https://api.nette.org">API</a></li>
 					</ul>
 				</div>
-				<div class="widget col-md-3">
+				<div class="widget col-md-2">
 					<h2>Componette</h2>
 					<ul class="links">
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
+						<li><a href="https://componette.com/">Latests</a></li>
+						<li><a href="https://componette.com/search/forms">By Forms</a></li>
+						<li><a href="https://componette.com/search/forms">By Tracy</a></li>
+						<li><a href="https://componette.com/search/forms">By API</a></li>
+						<li><a href="https://componette.com/search/forms">By Database</a></li>
+						<li><a href="https://github.com/componette/componette">Sources</a></li>
 					</ul>
 				</div>
-				<div class="widget col-md-3">
-					<h2>Contact us</h2>
+				<div class="widget col-md-2">
+					<h2>Planette</h2>
 					<ul class="links">
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
-						<li><a href="">Test</a></li>
+						<li><a href="/team">Team</a></li>
+						<li><a href="/contributing">Contributing</a></li>
+						<li><a href="https://github.com/planette/planette">Sources</a></li>
+						<li><a href="mailto:dev@planette.io">dev@planette.io</a></li>
+						<li><a href="https://twitter.com/FriendsOfNette">@FriendsOfNette</a></li>
 					</ul>
 				</div>
 			</div>
@@ -123,15 +117,9 @@
 	<div class="copyright">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					Subscribe for latest news.
-				</div>
-				<div class="col-md-4">
-					Input
-				</div>
-				<div class="col-md-4">
-					Facebook / Twitter / Youtube
-				</div>
+				<p class="text-center">
+					Join our team and help us to build a great community portal. <a href="https://github.com/f3l1x">@f3l1x</a> 
+				</p>
 			</div>
 			<hr>
 			<div class="text-center">&copy; 2016-2017 Planette, Inc. All rights reserved. Made by <a href="https://github.com/planette">Planette</a>.</div>
@@ -147,6 +135,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="{{ .Site.BaseURL }}dist/bundle.js?v={{ readFile "/static/dist/bundle.js" | md5}}" type="text/javascript"></script>
+<script src="{{ .Site.BaseURL }}dist/bundle.js" type="text/javascript"></script>
 </body>
 </html>
