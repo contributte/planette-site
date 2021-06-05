@@ -1,14 +1,14 @@
 sudo: false
 
 before_script:
- - wget https://github.com/gohugoio/hugo/releases/download/v0.24.1/hugo_0.24.1_Linux-64bit.tar.gz
- - tar -zxvf hugo_0.24.1_Linux-64bit.tar.gz
- - npm install
- - mv config.dev.toml config.toml
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.24.1/hugo_0.24.1_Linux-64bit.tar.gz
+  - tar -zxvf hugo_0.24.1_Linux-64bit.tar.gz
+  - npm install
+  - mv config.dev.toml config.toml
 
 script:
- - npm run build
- - ./hugo
+  - npm run build
+  - ./hugo
 
 deploy:
   provider: surge
