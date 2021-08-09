@@ -14,6 +14,11 @@ Website ğŸš€ <a href="https://contributte.org">contributte.org</a> | Contact ğŸ‘
     <img src="https://api.microlink.io/?url=https://planette.vercel.app&overlay.browser=light&screenshot=true&meta=false&embed=screenshot.url">
 </p>
 
+## Disclaimer
+
+| :warning: | This project is no longer being maintained. Please use [contributte/contributte-site](https://github.com/contributte/contributte-site).
+|---| --- |
+
 ## Usage
 
 Install dependencies via `npm install`.
