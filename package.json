@@ -1,8 +1,11 @@
 {
-  "name": "planette-io",
+  "name": "planette",
   "version": "1.0.0",
+  "engines": {
+    "node": "^14.x"
+  },
   "devDependencies": {
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-less": "^3.3.2",
     "gulp-minify-css": "^1.2.2",
@@ -11,7 +14,8 @@
     "gulp-watch": "^4.3.5"
   },
   "scripts": {
-    "build": "gulp css && gulp js",
-    "watch": "gulp watch"
+    "build": "gulp css && gulp js && hugo",
+    "watch": "gulp watch",
+    "dev": "hugo server -D -v"
   }
 }

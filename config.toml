@@ -1,4 +1,4 @@
-baseurl = "https://planette.io/"
+baseurl = "https://planette.vercel.app/"
 languageCode = "en-us"
 title = "Planette - Tutorials, examples, snippets and other dev tools"
 
@@ -8,5 +8,5 @@ mediatype = "application/rss"
 baseName = "feed"
 
 [params]
-    github = "https://github.com/planette/cookbook/"
-    github_content = "https://github.com/planette/cookbook/blob/master/content/"
+    github = "https://github.com/contributte/planette-site/"
+    github_content = "https://github.com/contributte/planette-site/blob/master/content/"

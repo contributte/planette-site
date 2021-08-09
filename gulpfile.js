@@ -1,9 +1,9 @@
-var gulp = require('gulp');
-var minifyCss = require('gulp-minify-css');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var watch = require('gulp-watch');
-var less = require('gulp-less');
+const gulp = require('gulp');
+const minifyCss = require('gulp-minify-css');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const watch = require('gulp-watch');
+const less = require('gulp-less');
 
 gulp.task('css', function () {
 	return gulp.src('./static/css/theme.less')
